@@ -1,0 +1,46 @@
+Sistema de gestão de Almoxarifado
+
+*** Entidade do banco de Dados ***
+Usuários:
+- Nome
+- E-mail
+- Senha
+- CPF
+- Matricula
+- Data/hora Cadastro
+
+Materiais:
+- Titulo
+- Descrição
+- Data/hora do cadastro
+- Categoria
+- Quantidade
+- Estoque mínimo
+
+Categoria:
+- Titulo
+- Descrição
+
+Pedidos:
+- Data/hora pedido
+- Status
+- Autor do Pedido
+
+Itens do Pedido:
+- Material 
+- Quantidade
+- Pedido 
+- Id do Pedido
+
+Movimentação:
+- Pedido 
+- Tipo (Entrega/Devolução)
+- Almoxarife
+- Data/hora
+
+Relatório:
+- Materiais em estoque por categoria
+- Histórico de movimentações por período
+- Relatório de consumo
+- Relatório de pedido por status
+- Relatório de pedidos por usuário
