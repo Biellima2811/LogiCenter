@@ -1,9 +1,22 @@
 .bg_dashboard{
     -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #002333, #159A9C);
 }
-.bg_menu_app_bar{
+.menu_app_bar{
     -fx-background-color: transparent;
+}
+.menu_app_bar .menu:hover,
+.menu_app_bar .menu:showing{
+    -fx-background-color: #159A9C;
+    -fx-background-radius: 10;
+}
+.menu_app_bar .menu .menu-item:hover{
+    -fx-background-color:#159A9C; 
 }
 .dashboard_app {
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0.0, 0, 10);
+}
+
+.container_style{
+    -fx-background-color: rgba(179, 189, 200, 0.3);
+    -fx-background-radius: 15;
 }

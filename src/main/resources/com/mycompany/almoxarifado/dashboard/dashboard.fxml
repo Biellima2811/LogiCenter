@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
@@ -29,11 +30,11 @@
                   <Insets />
                </HBox.margin>
                <children>
-                  <MenuBar layoutX="655.0" layoutY="11.0" styleClass="bg_menu_app_bar">
+                  <MenuBar layoutX="655.0" layoutY="11.0" styleClass="menu_app_bar">
                     <menus>
                       <Menu mnemonicParsing="false">
                         <items>
-                          <MenuItem mnemonicParsing="false" text="Close" />
+                          <MenuItem mnemonicParsing="false" text="Menu item" />
                         </items>
                            <graphic>
                               <FontIcon iconColor="WHITE" iconLiteral="mdi2b-bell" iconSize="28" />
@@ -41,7 +42,8 @@
                       </Menu>
                       <Menu mnemonicParsing="false">
                         <items>
-                          <MenuItem mnemonicParsing="false" text="Delete" />
+                          <MenuItem mnemonicParsing="false" text="Meu Perfil" />
+                              <MenuItem mnemonicParsing="false" text="Altera Senha" />
                         </items>
                            <graphic>
                               <FontIcon iconColor="WHITE" iconLiteral="mdi2a-account" iconSize="30" />
@@ -58,4 +60,18 @@
       <String fx:value="bg_dashboard" />
       <String fx:value="dashboard_app" />
    </styleClass>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" styleClass="container_style" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <FontIcon iconLiteral="mdi2h-home" iconSize="30" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
 </BorderPane>
